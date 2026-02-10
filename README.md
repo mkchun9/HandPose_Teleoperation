@@ -212,7 +212,7 @@ python3 -c "import piper_sdk; print('SDK OK')"
 
 3. **체험 시간**: 1인당 5-10분 권장
 
-## 📈 향후 개선 사항
+## 📈 To-DO
 
 - [ ] 손 회전 인식으로 엔드이펙터 자세 제어
 - [ ] 양손 모드 (한 손: 위치, 다른 손: 자세)
@@ -222,20 +222,14 @@ python3 -c "import piper_sdk; print('SDK OK')"
 - [ ] 다중 로봇 동시 제어
 - [ ] 웹 기반 인터페이스
 
-## 📝 라이선스
+## 📝 License
 
 MIT License
 
-## 👥 기여자
+## 👥 Reference
 
-- 개발자: [Your Name]
 - AgileX Robotics - PIPER 로봇 암
 - Google MediaPipe - 손 추적 라이브러리
-
-## 📞 문의
-
-- 이슈: [GitHub Issues](https://github.com/mkchun9/piper_hand_teleoperation/issues)
-- 이메일: your.email@example.com
 
 ## 🙏 감사의 말
 
