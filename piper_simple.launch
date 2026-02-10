@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Simple PIPER RViz Launch for ROS Noetic -->
+  <!-- URDF 없이도 작동 - TF와 joint_states만 시각화 -->
+  
+  <!-- RViz with config -->
+  <node name="rviz" pkg="rviz" type="rviz" 
+        args="-d $(dirname)/piper.rviz" 
+        output="screen" />
+  
+  <!-- Note: -->
+  <!-- 1. Static TF (world -> base_link)는 demo_v3_rviz.py에서 자동 발행 -->
+  <!-- 2. Joint states는 demo_v3_rviz.py에서 발행 -->
+  <!-- 3. Dynamic TF (base_link -> end_effector)도 자동 발행 -->
+  
+</launch>

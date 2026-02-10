@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Standalone PIPER RViz Launch (No Package Required) -->
+  
+  <!-- Get directory of this launch file -->
+  <arg name="launch_dir" value="$(dirname)" />
+  
+  <!-- Robot description - Load URDF from same directory -->
+  <param name="robot_description" command="cat $(arg launch_dir)/piper_simple.urdf" />
+  
+  <!-- Robot state publisher -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+    <param name="publish_frequency" value="50.0"/>
+  </node>
+  
+  <!-- RViz with config from same directory -->
+  <node name="rviz" pkg="rviz" type="rviz" 
+        args="-d $(arg launch_dir)/piper.rviz" 
+        output="screen" 
+        required="false" />
+  
+</launch>
